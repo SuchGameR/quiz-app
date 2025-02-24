@@ -137,7 +137,7 @@ function showQuestion() {
               showQuestion();
             }
           } else {
-            alert('不正解...');
+            alert('不正解... 正解は' + questionData.question + 'です。');
             showQuestion();
           }
         });
