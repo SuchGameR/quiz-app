@@ -1,0 +1,22 @@
+body {
+    font-family: sans-serif;
+}
+
+#header {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+    display: flex; 
+    justify-content: space-between;
+}
+
+#quiz-area {
+    margin-bottom: 20px;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
