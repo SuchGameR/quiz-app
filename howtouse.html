@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>クイズアプリの作り方</title>
+</head>
+<body>
+    <style>
+        span {
+            background-color: #333;
+            color: white;
+            padding: 2px;
+            border-radius: 5px;
+        }
+    </style>
+    <h1>まず最初に</h1>
+    <p>このサイトは単語をインポートすることで使用できます。</p>
+    <p>「test.txt」というファイルのみに対応しております。</p>
+    <p>「test.txt」には、『ジャンル』『単語』『説明』があります。</p>
+    <p>『ジャンル』は、単語のカテゴリーを表します。</p>
+    <p>『単語』は、クイズに出題される単語を表します。</p>
+    <p>『説明』は、単語の意味を表します。</p>
+    <p>単語と説明はセットで入力します。</p>
+    <p>ファイルを選択し、インポートボタンを押すことで、クイズを開始できます。</p>
+    <p>クイズ開始ボタンを押すことで、クイズが開始されます。</p>
+
+    <h2>どのように編集するの？</h2>
+    <p>『ジャンル』は問題を一つにまとめるファイルのような扱いです。</p>
+    <p><span>#title</span>と入力し、半角スペースを打った後にジャンルに表示される内容が来ます。</p>
+    <command>例: <span>#title ジャンル名</span></command>
+    <p>『単語』は問題の答えを表します。</p>
+    <p>全角スペースまたは、「:」を打ったまでは単語に表示される内容になります。</p>
+    <command>例: <span>単語名　説明</span></command>（単語名の後ろには全角スペースが含まれています）<br>
+    <command>例: <span>単語名:説明</span></command>
+    <p>以上です。</p>
+    <h2>エディタ</h2>
+    <p>サンプルもあるよ。</p>
+    <a href="test.txt" target="_blank" rel="noopener noreferrer">サンプルを表示</a><br>
+    <textarea id="editor" style="width: 300px; height: 100px;">
+#title ジャンル
+単語名　説明
+単語名: 説明
+    </textarea>
+</body>
+</html>
